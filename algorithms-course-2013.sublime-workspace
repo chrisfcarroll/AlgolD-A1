@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"le",
-				"lengtha"
+				"clo",
+				"clojure"
+			],
+			[
+				"neg",
+				"negresult"
 			],
 			[
 				"len",
-				"lengtha"
+				"lengthy"
+			],
+			[
+				"le",
+				"lengthx"
+			],
+			[
+				"dig",
+				"digitsinb"
+			],
+			[
+				"de",
+				"decimal-shift-right-shold-be-correct"
 			],
 			[
 				"depl",
@@ -134,10 +150,6 @@
 			[
 				"loca",
 				"local-relative-path"
-			],
-			[
-				"de",
-				"deployed-filename"
 			],
 			[
 				"am",
@@ -275,38 +287,25 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/week1/karatsuba.clj",
-			"settings":
-			{
-				"buffer_size": 801,
-				"line_ending": "Unix",
-				"name": "(ns week1.karatsuba)"
-			}
-		},
-		{
-			"file": "test/week1/karatsuba_test.clj",
-			"settings":
-			{
-				"buffer_size": 432,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "project.clj",
-			"settings":
-			{
-				"buffer_size": 282,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/Leiningen.sublime-build",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"",
+				"Build: Cancel"
+			],
+			[
+				"re",
+				"Build: Re-test"
+			],
+			[
+				"retest",
+				"Build: Re-test"
+			],
 			[
 				"close",
 				"Project: Close"
@@ -314,10 +313,6 @@
 			[
 				"packages",
 				"Package Control: List Packages"
-			],
-			[
-				"",
-				"Build: Clean"
 			],
 			[
 				"packa",
@@ -329,10 +324,6 @@
 			],
 			[
 				"ret",
-				"Build: Re-test"
-			],
-			[
-				"re",
 				"Build: Re-test"
 			],
 			[
@@ -405,6 +396,13 @@
 	},
 	"file_history":
 	[
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/project.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/README.md",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/repl.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week1/karatsuba_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week1/karatsuba_string_and_long_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba_string_and_long.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/algorithms_course_2013/core.clj",
 		"/Volumes/IntilS/source/deployment/pallet/src/machineimages.clj",
 		"/Volumes/IntilS/source/deployment/pallet/src/pallet_containers.clj",
@@ -525,14 +523,7 @@
 		"/Users/carrolls/Downloads/palletOpsGettingStarted2.pem",
 		"/Users/carrolls/Downloads/palletOpsGettingStarted.pem",
 		"/usr/local/Cellar/leiningen/1.7.1/README.md",
-		"/Users/carrolls/Downloads/woli-code.aspx",
-		"/Users/carrolls/bin-install/README.txt",
-		"/Users/carrolls/Applications/installWikidPad.sh",
-		"/Users/carrolls/Downloads/WikidPad-2/setup.py",
-		"/Users/carrolls/Downloads/WikidPad-2/setup_macosx.py",
-		"/Users/carrolls/Downloads/041-2011-1.English.dist",
-		"/Users/carrolls/Downloads/041-4776-1.English.dist",
-		"/Volumes/IntilDeploy/source/deployment/puppet/modules/java/manifests/init.pp"
+		"/Users/carrolls/Downloads/woli-code.aspx"
 	],
 	"find":
 	{
@@ -556,6 +547,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"*k",
+			"([-]*\\d+)",
+			"comment ",
+			"\"",
+			"half-length-of-longer-string",
+			"parseInt",
+			"Integer",
 			"lengtha",
 			"stack]",
 			"flatvector",
@@ -676,21 +674,20 @@
 			"','",
 			"\\n",
 			"bootcampESD.pkg",
-			"<u><span >([^<]+)</span></u>",
-			"<u>",
-			"class=MsoNormal ",
-			"<td width=\\d+ >",
-			"style='[^']+'",
-			"Red Triangle",
-			"exceptio",
-			":"
+			"<u><span >([^<]+)</span></u>"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"**k",
+			"\"\\1\"",
+			"",
+			"half-length-of-longer-number",
+			"parseLong",
+			"Long",
 			"splitx",
 			"flatvec",
 			"(flatvector",
@@ -811,88 +808,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/week1/karatsuba.clj",
-					"settings":
-					{
-						"buffer_size": 801,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								801,
-								801
-							]
-						],
-						"settings":
-						{
-							"auto_name": "(ns week1.karatsuba)",
-							"syntax": "Packages/Clojure/Clojure.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "test/week1/karatsuba_test.clj",
-					"settings":
-					{
-						"buffer_size": 432,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								432,
-								432
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Clojure/Clojure.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "project.clj",
-					"settings":
-					{
-						"buffer_size": 282,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								282,
-								282
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Clojure/Clojure.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -929,7 +846,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 215.0
+		"height": 281.0
 	},
 	"output.find_results":
 	{
