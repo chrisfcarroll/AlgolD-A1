@@ -1,0 +1,969 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"lengtha"
+			],
+			[
+				"len",
+				"lengtha"
+			],
+			[
+				"depl",
+				"deploy-from-step"
+			],
+			[
+				"grou",
+				"group-spec"
+			],
+			[
+				"stack",
+				"stack-onto"
+			],
+			[
+				"gr",
+				"group-spec-name"
+			],
+			[
+				"coll",
+				"collector-stack"
+			],
+			[
+				"wep",
+				"webapp-stack"
+			],
+			[
+				"group",
+				"group-name"
+			],
+			[
+				"Stable",
+				"StableTestCollector"
+			],
+			[
+				"on",
+				"on-cloud"
+			],
+			[
+				"all",
+				"all-intilery-group-specs"
+			],
+			[
+				"mk",
+				"mkdir-script"
+			],
+			[
+				"gro",
+				"group-or-group-fromname-should-get-a-group-from-its-name"
+			],
+			[
+				"resul",
+				"resultwithoutquotes"
+			],
+			[
+				"with",
+				"with-dashindexhtml-in-docroot-should-extract-document-root-path-from-input-file"
+			],
+			[
+				"wa",
+				"war-file-path"
+			],
+			[
+				"war",
+				"war-filename-pattern"
+			],
+			[
+				"col",
+				"collector-vhost-conf"
+			],
+			[
+				"web",
+				"web-app-vhost-conf"
+			],
+			[
+				"doc",
+				"docroot"
+			],
+			[
+				"def",
+				"default-groups-to-action"
+			],
+			[
+				"pu",
+				"public-key-path"
+			],
+			[
+				"get",
+				"get-single-filename"
+			],
+			[
+				"file",
+				"filename-regex"
+			],
+			[
+				"ma",
+				"my-admin-user"
+			],
+			[
+				"pallet",
+				"palletOpsGettingStarted"
+			],
+			[
+				"up",
+				"up-machines"
+			],
+			[
+				"loc",
+				"local-path"
+			],
+			[
+				"tmp",
+				"tmpfile"
+			],
+			[
+				"tar",
+				"targetdir"
+			],
+			[
+				"int",
+				"intomerge"
+			],
+			[
+				"loca",
+				"local-relative-path"
+			],
+			[
+				"de",
+				"deployed-filename"
+			],
+			[
+				"am",
+				"amiid"
+			],
+			[
+				"node",
+				"node-spec-on-aws"
+			],
+			[
+				"mod",
+				"mod_jk"
+			],
+			[
+				"build",
+				"build-and-install-modjk"
+			],
+			[
+				"src",
+				"srctarball"
+			],
+			[
+				"star",
+				"start-tomcat7"
+			],
+			[
+				"start",
+				"start-apache"
+			],
+			[
+				"with-a",
+				"with-all-webserver"
+			],
+			[
+				"wit",
+				"with-modjk-sources"
+			],
+			[
+				"with-",
+				"with-modjk-dependencies"
+			],
+			[
+				"re",
+				"remote-file"
+			],
+			[
+				"files",
+				"files-static-html-public-archive"
+			],
+			[
+				"apa",
+				"apachetomcatstack"
+			],
+			[
+				"StableTest",
+				"group-StableTestWeb"
+			],
+			[
+				"ve",
+				"vector-to-search"
+			],
+			[
+				"ser",
+				"server-spec-package"
+			],
+			[
+				"ph",
+				"phase-deploy-it-min-js"
+			],
+			[
+				"tomc",
+				"tomcat"
+			],
+			[
+				"ex",
+				"exec-script"
+			],
+			[
+				"with-tom",
+				"with-tomcat-native"
+			],
+			[
+				"phas",
+				"phase-deploy-geoip"
+			],
+			[
+				"pha",
+				"phases"
+			],
+			[
+				"with-web",
+				"with-intilerywebdata-war-deployed"
+			],
+			[
+				"no",
+				"node-spec-europe-amzlinux64-smallest"
+			],
+			[
+				"sta",
+				"start"
+			],
+			[
+				"run",
+				"run-command-with-console-trace"
+			],
+			[
+				"phase",
+				"phase-fn"
+			],
+			[
+				"con",
+				"connector"
+			],
+			[
+				"nod",
+				"node-spec-for-intilery-webdata-stabletest"
+			],
+			[
+				"server",
+				"server-spec"
+			],
+			[
+				"command",
+				"commandname"
+			],
+			[
+				"comm",
+				"commandname"
+			],
+			[
+				"up-cento",
+				"up-centos-official63updated"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/week1/karatsuba.clj",
+			"settings":
+			{
+				"buffer_size": 801,
+				"line_ending": "Unix",
+				"name": "(ns week1.karatsuba)"
+			}
+		},
+		{
+			"file": "test/week1/karatsuba_test.clj",
+			"settings":
+			{
+				"buffer_size": 432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "project.clj",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Leiningen.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Build: Clean"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build: Clean"
+			],
+			[
+				"ret",
+				"Build: Re-test"
+			],
+			[
+				"re",
+				"Build: Re-test"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"clojure",
+				"Set Syntax: Clojure"
+			],
+			[
+				"cloju",
+				"Set Syntax: Clojure"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Run",
+				"Build: Run"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/algorithms_course_2013/core.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/machineimages.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/pallet_containers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/intilerywarstack_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/actions.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerywarstack.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/pallet_helpers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/machineimages_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/pallet_containers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/intilerydbstack_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/apachetomcatstack_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/pallet/CONTRIBUTING.md",
+		"/Volumes/IntilS/source/deployment/pallet/src/pallet_helpers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/.lein-repl-history",
+		"/Volumes/IntilS/source/deployment/pallet/test/actions_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/helpers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/helpers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/palletdeploy.sublime-workspace",
+		"/Users/carrolls/.pallet/config.clj",
+		"/Users/carrolls/.pallet/services/aws.clj",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/IntilS/source/deployment/pallet/src/repl.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/helpers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/testing.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilery-war-deploy-only.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/local_file_helpers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/intileryallstacks_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/modjkfromjpackagerepo.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/apachetomcatstack.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerywarstack_containers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/pallethelpers.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerydbstack.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/commandline.clj",
+		"/Volumes/IntilS/source/deployment/pallet/project.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/securitygroups.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerywarstack.clj.orig",
+		"/Volumes/IntilS/source/deployment/pallet/src/modjkfromsrc.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerywarstack_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/pallethelpers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/cloud_service.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/cloud_and_images.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/actions_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/local_file_helpers_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/files.clj",
+		"/Volumes/IntilS/source/deployment/files/intilery.com.conf",
+		"/Volumes/IntilS/source/deployment/files/intilery-analytics.com.conf",
+		"/Users/carrolls/Library/Caches/TemporaryItems/SitePoint Order Receipt (315824).eml",
+		"/Users/carrolls/Desktop/Order Id- 01S002C828D.eml",
+		"/Users/carrolls/Downloads/report-1.qif",
+		"/Volumes/IntilS/source/deployment/pallet/palletdeploy.sublime-project",
+		"/Volumes/IntilS/source/deployment/pallet/test/files_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/clojure_core_extensions.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intileryclojurecontrib.clj",
+		"/Volumes/IntilS/source/deployment/pallet/palletOpsGettingStarted.pem",
+		"/Users/carrolls/.ssh/id_rsa",
+		"/Volumes/IntilS/source/deployment/pallet/palletOpsGettingStarted.pub",
+		"/Users/carrolls/.ssh/id_rsa.pub",
+		"/Volumes/IntilS/source/deployment/files/jpackage.rhel5.repo",
+		"/Volumes/IntilS/source/deployment/files/jpackage.rhel5.repo.properties",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/MacTerminal/Default.sublime-keymap",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/MacTerminal.sublime-settings",
+		"/Volumes/IntilS/source/deployment/files/build-and-install-modjk-for-centos.sh",
+		"/Volumes/IntilS/source/deployment/files/_mod_jk.conf",
+		"/Volumes/IntilS/source/deployment/files/workers.properties",
+		"/Volumes/IntilS/source/deployment/pallet/src/intileryallstacks_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/apachetomcatstack_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/testing.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilerydbstack_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/7) passed to: PersistentArrayMap, compiling:(intilerywarstack.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/6) passed to: core$reduce, compiling:(intilerywarstack.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/domaindatabase.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/domain_database_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/test/domain_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/domain.clj",
+		"/Volumes/IntilS/source/deployment/pallet/domaindatabase.clj",
+		"/Volumes/IntilS/source/deployment/pallet/domain_test.clj",
+		"/Volumes/IntilS/source/deployment/pallet/repl.clj",
+		"/Volumes/IntilS/source/deployment/pallet/stable-test-groups-should-be-called-StableTestXXX) (domain_test.clj",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Leiningen.sublime-build",
+		"/Volumes/IntilS/source/deployment/pallet/core.clj",
+		"/Volumes/IntilS/source/deployment/pallet/AFn.java",
+		"/Volumes/IntilS/source/deployment/pallet/	at clojure.lang.Compiler.eval(Compiler.java",
+		"/Volumes/IntilS/source/deployment/pallet/	at clojure.main$main.doInvoke(main.clj",
+		"/Volumes/IntilS/source/deployment/pallet/Exception in thread \"main\" java.lang.RuntimeException",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Python/Python.sublime-build",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Ruby/Ruby.sublime-build",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Clojure.sublime-settings",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/carrolls/Desktop/Software/Clojure/eg/project.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/various-amazon-images.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilery/domain.clj",
+		"/Volumes/IntilS/source/deployment/pallet/src/intilery/actions.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/actions.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/domain.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/project.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/jclouds-wire.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/resources/logback.xml",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/old/pallet.2013-01-18.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/old/jclouds-compute.2013-01-18.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/pallet.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/vmfest.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/jclouds-compute.log",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/repl.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/intilery-deploy-pallet.sublime-workspace",
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/intilery-deploy-pallet.sublime-project",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/intilery/src/intilery/up-image-commands.clj",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/intilery/project.clj",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/intilery/src/intilery/deploy.clj",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/carrolls/Desktop/Chris/My Notes/Computer Science & IT/Notes on automated deployment pipelline using jenkins 2013 Jan.txt",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/pallet-centos/project.clj",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/pallet-centos/src/pallet_centos/repl.clj",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/fsharp.sublime-build",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/pallet-ubuntu/src/pallet_ubuntu/repl.clj",
+		"/Users/carrolls/Desktop/Software/JavaProjects/Clojure1/centos/ubuntu-up.clj",
+		"/usr/bin/lein",
+		"/Users/carrolls/Downloads/palletOpsGettingStarted2.pem",
+		"/Users/carrolls/Downloads/palletOpsGettingStarted.pem",
+		"/usr/local/Cellar/leiningen/1.7.1/README.md",
+		"/Users/carrolls/Downloads/woli-code.aspx",
+		"/Users/carrolls/bin-install/README.txt",
+		"/Users/carrolls/Applications/installWikidPad.sh",
+		"/Users/carrolls/Downloads/WikidPad-2/setup.py",
+		"/Users/carrolls/Downloads/WikidPad-2/setup_macosx.py",
+		"/Users/carrolls/Downloads/041-2011-1.English.dist",
+		"/Users/carrolls/Downloads/041-4776-1.English.dist",
+		"/Volumes/IntilDeploy/source/deployment/puppet/modules/java/manifests/init.pp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Volumes/IntilS/source/deployment/pallet,<open folders>,<open files>",
+			"/Volumes/IntilS/source/deployment/pallet",
+			"<open folders>,/Volumes/IntilS/source/deployment/pallet",
+			"<open folders>",
+			"/Volumes/IntilS/source/deployment/pallet",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lengtha",
+			"stack]",
+			"flatvector",
+			"flatvector\\S",
+			"(stack ",
+			"[helpers",
+			"(\\s)helpers(\\s)",
+			"on-cloud-as-me-as-me",
+			"on-cloud",
+			"palletOpsGettingStarted",
+			")",
+			"(group-from-name-or-self ",
+			"on-cloud",
+			"((on-cloud))",
+			"on-cloud",
+			"group-StableTestDb",
+			"on-cloud",
+			"pallethelpers",
+			"pallethelpers-test",
+			"node-spec-on-aws",
+			"(pconf/compute-service :aws)",
+			"group-or-group-spec-from-name",
+			"group-from-name",
+			"dflt-groups-to-action",
+			"print",
+			"files-test",
+			"war-file-name",
+			"groups-to-action",
+			"grp",
+			"\\<up",
+			"\\<up ",
+			"\\<up",
+			"\\<up ",
+			"default-groups-to-action",
+			"groups-to-action",
+			"default-groups-to-action",
+			"args",
+			"intileryclojurecontrib",
+			"chrisintilery.key",
+			"chrisintilery.pub",
+			"chrisintilery.pem",
+			"palletOpsGettingStarted",
+			"chrisintilery.pem",
+			"palletOpsGettingStarted",
+			"with-all-webserver",
+			"group-StableTestWeb",
+			"with-all-webserver",
+			"puppet",
+			"with-auto-admin-user",
+			"with-auto-admin",
+			"exec-mkdir",
+			"with-file-untarred",
+			"with-static-html-files-deployed",
+			"with-various-config-files",
+			"with-file",
+			"with-static-html-files-deployed",
+			"\\s|\\(|\\)",
+			"\\n    :local-file (.*)\\n",
+			"    :action :create :force true :overwrite-changes true))",
+			"    :owner \"root\", :group \"root\" :mode \"644\"",
+			"\\(defn ((\\w|-)+) \\[session\\]\\n  \\(remote-file session",
+			"with-intilery-war-dependencies([^-])",
+			"node-spec-western-europe-",
+			"withall-modjk",
+			"with-httpddevel",
+			"intilerypalletcontrib",
+			"western-western",
+			"-europe",
+			"srctarball",
+			"with-apachetomcat-stack",
+			"file-hosts-overwrite",
+			"apachetomcatstackdatabase",
+			"domain",
+			"file-hosts",
+			"with-apache-worker-properties",
+			"deploy-it-min-js",
+			"war-dependencies",
+			"server-spec-package",
+			"stabletest-dbserver",
+			"stabletest-webserver",
+			"intilerywar",
+			"intilerywebdata-war",
+			"deploy-dependencies",
+			"build",
+			"server-spec :phases \\{:configure \\(phase-fn \\(package \"([^\"]+)\"\\)\\)\\}\\)",
+			"phase-deploy",
+			"phase-deploy-geoip",
+			"phase-deploy-webapp",
+			"intilery",
+			"intilery.actions",
+			"09",
+			"\\<up\\>",
+			"up",
+			"tomcat6",
+			":refer",
+			"tomcat6",
+			"with-java-openjdk",
+			"node-spec-europe-amzlinux64-smallest",
+			"node-spec-for-intilery-webdata-stabletest",
+			"server-standard-crates",
+			"base-server",
+			"deploy",
+			"tools",
+			"mygroup",
+			"centos",
+			"))\n",
+			"passphrase",
+			"password",
+			"carrolls",
+			"^\\d{1,2}\\t",
+			"rest",
+			"HtmlUtilTest",
+			"','",
+			"BootCampESD.pkg",
+			"principles",
+			"','",
+			"041-4776",
+			"','",
+			"\\n",
+			"bootcampESD.pkg",
+			"<u><span >([^<]+)</span></u>",
+			"<u>",
+			"class=MsoNormal ",
+			"<td width=\\d+ >",
+			"style='[^']+'",
+			"Red Triangle",
+			"exceptio",
+			":"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"splitx",
+			"flatvec",
+			"(flatvector",
+			"[pallet-helpers",
+			"\\1pallet-helpers\\2",
+			"on-cloud-as-me",
+			"palletOpsKeyA",
+			"(on-cloud)",
+			"StableTestDb",
+			"pallet-containers",
+			"node-spec-from-aws-image-name",
+			"on-cloud",
+			"on-aws",
+			"group-from-name-or-self",
+			"group-spec-from-name",
+			"all-intilery-group-specs",
+			"war-file-path",
+			"dflt-groups-to-action",
+			"group",
+			"up-group ",
+			"groups-to-action",
+			"(groups-to-action)",
+			"groups-to-action",
+			"arg",
+			"clojure-core-extensions",
+			"palletOpsGettingStarted.pem",
+			"chrisintilery.key.pub",
+			"chrisintilery.key",
+			"chrisintilery",
+			"chrisintilery.key",
+			"chrisintilery",
+			"with-common-webserver",
+			"(:extends StableTestWebApp)",
+			"with-all-webserver",
+			"StableTestWebApp",
+			"group-StableTestWeb",
+			"with-common-webserver",
+			"with-custom-auto-admin-user",
+			"with-admin-user",
+			"with-local-tarball-extracted",
+			"withall-static-html-files-deployed",
+			"withall-various-config-files",
+			"with-static-html-files-untarred-and-deployed",
+			"",
+			"\\1",
+			")",
+			"",
+			"(def with-file\\1",
+			"node-spec-dublin-",
+			"with-httpd-devel",
+			"pallethelpers",
+			"western",
+			"-western-europe",
+			"srcball",
+			"srctarball",
+			"withall-apachetomcat-stack",
+			"file-hosts",
+			"intilerydbstack",
+			"apachetomcatstack",
+			"file-hosts",
+			"file-hosts-overwrite",
+			"",
+			"file-it-min-js",
+			"with-package",
+			"StableTestDb",
+			"StableTestWeb",
+			"intilery-war",
+			"intilerywar",
+			"war-dependencies",
+			"(server-spec-package \"\\1\")",
+			"deploy",
+			"phase-deploy-dependencies",
+			"phase-deploy-intilery-war-as-root",
+			"actions",
+			"install",
+			"tomcat7",
+			":only",
+			"tomcat7",
+			"with-java6openjdk",
+			"nodespec-europe-amzlinux64-smallest",
+			"node-spec-europe-amzlinux64-smallest",
+			"with-webserver",
+			"with-auto-admin",
+			"StableTest",
+			"myUserName",
+			"",
+			"\\n",
+			"\\n===============================\\n",
+			"<A href=\"\\1\" title=\"BootCampESD.pkg direct download\">\\1</a>",
+			"",
+			"<td>",
+			"",
+			"\\n",
+			"\\1 )",
+			"insert into @appids values( \\1",
+			"",
+			"\\1.cdg.caudwell.com",
+			"\\n",
+			"\\\\)",
+			"\\\\(",
+			"ls -l ",
+			"\\\\ ",
+			"\\ ",
+			"DELETED : \\1/\\2",
+			"ls -l ",
+			"NEW : \\1/\\2",
+			"CHANGED : \\1",
+			"NEW : \\1",
+			"NEW",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/week1/karatsuba.clj",
+					"settings":
+					{
+						"buffer_size": 801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								801,
+								801
+							]
+						],
+						"settings":
+						{
+							"auto_name": "(ns week1.karatsuba)",
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/week1/karatsuba_test.clj",
+					"settings":
+					{
+						"buffer_size": 432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								432,
+								432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "project.clj",
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Clojure/Clojure.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 215.0
+	},
+	"output.find_results":
+	{
+		"height": 456.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/IntilS/source/deployment/pallet/palletdeploy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true
+}
