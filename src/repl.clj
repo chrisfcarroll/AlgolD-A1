@@ -25,9 +25,15 @@
     ") 
     (source merge-sort)))
 
+(defn help [] (println "
+  lein run <name> to show the source code and example for algorithm <name>
+
+  lein repl to be able to play with it.
+  "))
+
 (defn -main 
   ([subject] (condp #(.startsWith %1 %2) subject
               "karatsuba"  (show-karatsuba)
               "merge-sort" (show-merge-sort)
               (-main)))
-  ([]  (show-merge-sort)))
+  ([]  (do (show-karatsuba) (show-merge-sort) (help))))
