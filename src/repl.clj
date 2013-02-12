@@ -1,9 +1,11 @@
 (ns repl
   (:require
     [clojure.repl :refer [source]] 
-    [week1.karatsuba :refer :all]))
+    [week1.karatsuba :refer :all]
+    [week1.merge-sort :refer :all]
+  ))
 
-(defn -main [& args]
+(defn show-karatsuba []
   (do
     (ns week1.karatsuba)
     (println "karatsuba multiplication is bound the function *k.
@@ -13,3 +15,19 @@
     (source *k)
     (println)
     (source **k)))
+
+(defn show-merge-sort []
+  (do
+    (ns week1.merge-sort)
+    (println "merge-sort sorts a sequence:
+    Example: (merge-sort '(1 9 3 8 3 4)) = " (merge-sort '(1 9 3 8 3 4)) "
+
+    ") 
+    (source merge-sort)))
+
+(defn -main 
+  ([subject] (condp #(.startsWith %1 %2) subject
+              "karatsuba"  (show-karatsuba)
+              "merge-sort" (show-merge-sort)
+              (-main)))
+  ([]  (show-merge-sort)))
