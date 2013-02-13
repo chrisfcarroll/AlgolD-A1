@@ -1,6 +1,4 @@
-=======
-Algorithms design and analysis 1
-=========
+# Algorithms design and analysis 1
 # Chris F Carroll algorithms-course-2013
 # To run clojure files from the commandline:
 
