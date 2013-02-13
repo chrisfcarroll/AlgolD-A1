@@ -1,4 +1,6 @@
-Week 1 Notes
+Week 1 Introductions
+--------------------
+
 Vocab
 bigO as granularity level
 
