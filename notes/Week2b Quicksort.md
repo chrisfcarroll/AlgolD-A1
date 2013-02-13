@@ -18,3 +18,16 @@ nb ends with pivot in correct place
 1) Pivoting is linear time with _no_ overhead.
 2) enable divide and conquer
 
+
+## Partitioning around a pivot
+### Merge step proof of correctness
+The for loop maintains invariants :
+    [p ¦ left ¦ right ¦ unsorted]
+
+## Proof of correctness of quicksort
+
+
+
+
+## Choosing a pivot
+
