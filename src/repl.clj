@@ -3,6 +3,7 @@
     [clojure.repl :refer [source]] 
     [week1.karatsuba :refer :all]
     [week1.merge-sort :refer :all]
+    [week2.quick-sort :refer :all]
   ))
 
 (defn show-karatsuba []
@@ -25,10 +26,25 @@
     ") 
     (source merge-sort)))
 
+(defn show-quick-sort []
+  (do
+    (ns week2.quick-sort)
+    (println "
+    Example: (quick-sort '(1 9 3 8 3 4)) = " (quick-sort '(1 9 3 8 3 4)) "
+    ") 
+    (source quick-sort)))
+
 (defn help [] (println "
+  ------------------------------------------------------------------------
   lein run <name> to show the source code and example for algorithm <name>
 
   lein repl to be able to play with it.
+  hints for playing in the repl:
+  ==> (ns week2.quick-sort) ; changes the current namespace
+  ==> (quick-sort '(1 4 5 3 0 9 5))
+  ==> (ns week1.karatsuba)
+  ==> (*k 12345 12345)
+
   "))
 
 (defn -main 

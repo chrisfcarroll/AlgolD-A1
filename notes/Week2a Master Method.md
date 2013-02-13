@@ -98,4 +98,4 @@ a^j   *   C * (n/b^j)^d
 Sum over all levels:
 
 Cn^d * sigma0..logbn( (a/b^d)^j )
-
+3 cases: converge/diverge/constant

@@ -4,12 +4,16 @@
   (let [n (int (/ (count a) 2))]   (split-at n a)))
 
 (defn merge-sort [ sequence ]
+
   (if (empty? (rest sequence)) 
     sequence
+
     (let [[interiml interimr] (two-halves-of sequence)
           sortedl (merge-sort interiml)
           sortedr (merge-sort interimr)]
+          
         (comment println "input sequence : " sequence "(sortedl, sortedr) : (" sortedl sortedr ")")
+        
         (loop [a ()
                finall sortedl
                finalr sortedr]
