@@ -5,14 +5,15 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  ;[org.apache.commons/commons-lang3 "3.1"]
                  ;[org.clojure/math.numeric-tower "0.0.2"]
+                 [org.clojure/clojure-contrib "1.2.0"]
+                 
                  ]
+  :profiles 
+    {:dev
+      {:dependencies [[com.cemerick/pomegranate "0.0.13"]]
+       ;:plugins
+    }}
 
-  :dev-dependencies [[org.cloudhoist/pallet "0.7.2" :type "test-jar"]]
-                     
-  :profiles {:dev
-             {:dependencies
-              [[org.cloudhoist/pallet "0.7.2" :classifier "tests"]]
-              :plugins [[org.cloudhoist/pallet-lein "0.5.2"]]}}
   :local-repo-classpath true
   :repositories
     {"sonatype-snapshots" "https://oss.sonatype.org/content/repositories/snapshots"

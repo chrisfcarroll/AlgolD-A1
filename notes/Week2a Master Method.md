@@ -35,7 +35,7 @@ format of recurrence problems to which this version applies:
 
     a= no of subproblems >= 1
     b= factor by which input size shrinks >= 1
-    d=exp. in running time of merge step (d=0 > constant merge size)
+    d=exp. in running time of merge step (d=0 ==> constant merge size)
 
 nb a,b,d are constants here
 
