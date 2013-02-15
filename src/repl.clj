@@ -53,3 +53,9 @@
               "merge-sort" (show-merge-sort)
               (-main)))
   ([]  (do (show-karatsuba) (show-merge-sort) (help))))
+
+
+(defn load-use [ns] 
+  (let [filename (str "src/"  (.. ns (replace "-"  "_") (replace "." "/")) ".clj"  )]
+      (load-file filename)
+      (use (symbol ns)))
