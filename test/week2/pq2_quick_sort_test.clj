@@ -7,9 +7,8 @@
     ))
 
 (deftest quick-sort-should-be-correct-for-any-pivot
-  (doseq [p [:last :first]]
-    (reset! week2.pq2-quick-sort/pivot-choice p)
-    (are [input] (<= (quick-sort input))
+  (doseq [pivot-choice [:last :first]]
+    (are [input] (apply <= (quick-sort input pivot-choice))
           [1]
           [1 2 3]
           [1 3 4 2 5]
@@ -51,6 +50,8 @@
   (are [expected tseq i j] (= expected (persistent! (swap-at! (transient tseq) i j)))
       [1 0 2] [0 1 2] 0 1
       [0 2 1] [0 1 2] 1 2
+      [2 1 0] [0 1 2] 2 0
+      [0 2 1] [0 1 2] 2 1
   ))
 
 (defn is-partitioned-on-pivot? 
@@ -69,11 +70,16 @@
         (is (= expected-new-index new-index))
         (is (is-partitioned-on-pivot? tseq new-index )))
 
-      0, [0 1 2] 0
-      1, [1 0 2] 0
+      ; 0, [0 1 2] 0
+      ; 1, [1 0 2] 0
+      ; 2, [2 1 0] 0
+      ; 3, [3 0 1 2 4 5] 0
+      ; 3, [3 5 4 2 1 0] 0
 
-      3, [3 0 1 2 4 5] 0
-      3, [3 5 4 2 1 0] 0
+      0, [1 2 0] 2
+      5, [3 0 1 2 4 5] 5
+      1, [3 5 4 2 0 1] 5 
+
   ))
 
 

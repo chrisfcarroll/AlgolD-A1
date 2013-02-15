@@ -10,7 +10,7 @@
 
 (def count-comparisons (atom 0))
 
-(def pivot-choice (atom :last))
+(def default-pivot-choice (atom :last))
 
 (defn choose-pivot-index
   "returns the index of a single element of tsequence lying between from-index and to-index inclusive.
@@ -38,42 +38,44 @@
   ([tseq pivot-index from-index to-index]
 
     (if (not= pivot-index from-index)
-      (swap-at! tseq from-index pivot-index)
-    )
+          (swap-at! tseq from-index pivot-index))
 
     (let [ii                     (atom from-index)
           rightmost-small-index  (atom from-index)]
       (doseq [i (range (inc from-index) (inc to-index))]
-          (if (<-at tseq i pivot-index) 
+          (comment println-transient tseq)
+          (if (<-at tseq i from-index) 
             (do 
               (swap! rightmost-small-index inc)
               (swap-at! tseq i @rightmost-small-index)
             )))
 
-      (swap-at! tseq pivot-index @rightmost-small-index)
+      (swap-at! tseq from-index @rightmost-small-index)
 
       @rightmost-small-index))
 
   ([tseq pivot-index] (qs-partition-about-and-get-new-pivot-index! tseq pivot-index 0 (dec (count tseq)))))
 
-(defn quick-sort-t! [ tsequence from-index to-index ]
+(defn quick-sort-t! [ tsequence pivot-choice from-index to-index ]
   (if (<= to-index from-index)
     tsequence
-    (let [pivot-index     (choose-pivot-index @pivot-choice tsequence from-index to-index)
+    (let [pivot-index     (choose-pivot-index pivot-choice tsequence from-index to-index)
           new-pivot-index (qs-partition-about-and-get-new-pivot-index! 
                                   tsequence pivot-index from-index to-index)]
           (comment println "(" from-index " to " to-index ")")
           (swap! count-comparisons #(+ % (- to-index from-index)))
-          (quick-sort-t! tsequence from-index (dec new-pivot-index))
-          (quick-sort-t! tsequence (inc new-pivot-index) to-index)
+          (quick-sort-t! tsequence pivot-choice from-index (dec new-pivot-index))
+          (quick-sort-t! tsequence pivot-choice (inc new-pivot-index) to-index)
           tsequence)))
 
-(defn quick-sort [sequence] 
-  (persistent! (quick-sort-t! (transient sequence) 0 (dec (count sequence)) )))
+(defn quick-sort 
+  ([sequence pivot-choice] 
+        (persistent! (quick-sort-t! (transient sequence) pivot-choice 0 (dec (count sequence)) )))
+  ([sequence] (quick-sort sequence @default-pivot-choice)))
 
 (defn quick-sort-with-comparison-count [sequence]
   (reset! count-comparisons 0)
-  [(quick-sort sequence) @count-comparisons]
+  {:result (quick-sort sequence) :count @count-comparisons}
   )
 
 (defn assert-sorted [s] (if (not (apply < s)) (throw (Exception. "Failed to sort input"))))
