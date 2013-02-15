@@ -1,4 +1,5 @@
-(ns week2.pq2-quick-sort)
+(ns week2.pq2-quick-sort
+  (require [contrib :refer :all]))
 
 (defn calculate-qs-comparisons-with-1st-element-as-pivot [sequence] ())
 
@@ -13,21 +14,17 @@
 
 (defn <-at [s x y] (< (nth s x) (nth s y)) )
 
-(defn swap-at! [tseq i j]
+(defn swap-at! [tseq i j] "Swaps the ith and jth elements of a transient collection"
   (let [z (nth tseq i )]
     (assoc! tseq i (nth tseq j))
     (assoc! tseq j z)))
 
 (defn qs-partition-about-and-get-new-pivot-index! 
   "rearrange elements of tseq so that all elements less than the element at pivot-index are moved 
-  to the left of it, and all bigger elements are moved to the right.
-  returns the new index of the pivot element."
+  to the left of it; and all bigger elements are moved to the right.
+  returns the new index position of the pivot element."
 
   ([tseq pivot-index from-index to-index]
-    (print "in :[")
-      (doseq [i (range 0 (count tseq))]
-        (print (nth tseq i) " "))
-    (println "], (left, pivot, right :" from-index "," pivot-index "," to-index ")" )
 
     (if (not= pivot-index from-index) (throw (IllegalArgumentException. "Can't yet deal with the case when pivot is not at start of sub sequence." ))) 
         ; put the pivot at the beginning so we can always work simplistically left to right
@@ -40,17 +37,8 @@
               (swap! rightmost-small-index inc)
               (swap-at! tseq i @rightmost-small-index)
             )))
-      (print "out :[")
-        (doseq [i (range 0 (count tseq))]
-          (print (nth tseq i) " "))
-      (println "], rightmost-small-index: " @rightmost-small-index)
 
       (swap-at! tseq pivot-index @rightmost-small-index)
-
-      (print "out :[")
-        (doseq [i (range 0 (count tseq))]
-          (print (nth tseq i) " "))
-      (println "], rightmost-small-index: " @rightmost-small-index)
 
       @rightmost-small-index))
 
@@ -59,17 +47,14 @@
 
 
 (defn quick-sort-t! [ tsequence from-index to-index ]
-  (if (= from-index to-index)
+  (if (<= to-index from-index)
     tsequence
-    (let [pivot-index (choose-pivot-index :first tsequence from-index to-index)]
-        (let [new-pivot-index  (qs-partition-about-and-get-new-pivot-index! tsequence pivot-index from-index to-index)
-              lft-from from-index
-              lft-to (dec new-pivot-index)
-              rt-from (inc new-pivot-index)
-              rt-to to-index]
-          (quick-sort-t! tsequence lft-from lft-to)
-          (quick-sort-t! tsequence rt-from  rt-to )
-          tsequence))))
+    (let [pivot-index     (choose-pivot-index :first tsequence from-index to-index)
+          new-pivot-index (qs-partition-about-and-get-new-pivot-index! 
+                                  tsequence pivot-index from-index to-index)]
+          (quick-sort-t! tsequence from-index (dec new-pivot-index))
+          (quick-sort-t! tsequence (inc new-pivot-index) to-index)
+          tsequence)))
 
 (defn quick-sort [sequence] 
   (persistent! (quick-sort-t! (transient sequence) 0 (dec (count sequence)) )))
