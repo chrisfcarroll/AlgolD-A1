@@ -3,6 +3,13 @@
 
 (defn calculate-qs-comparisons-with-1st-element-as-pivot [sequence] ())
 
+(def input (vec (map #(Integer/parseInt %) (.split (slurp "src/week2/QuickSort.txt") "\r\n"))))
+
+(def assert-unsorted-input 
+  (if (apply < input) (throw (IllegalArgumentException. "input was already sorted."))))
+
+(def count-comparisons (atom 0))
+
 (defn choose-pivot-index
   "returns the index of a single element of tsequence lying between from-index and to-index inclusive.
   Valid values for how
@@ -52,12 +59,22 @@
     (let [pivot-index     (choose-pivot-index :first tsequence from-index to-index)
           new-pivot-index (qs-partition-about-and-get-new-pivot-index! 
                                   tsequence pivot-index from-index to-index)]
+          (println "(" from-index " to " to-index ")")
+          (swap! count-comparisons #(+ % (dbg (- to-index from-index))))
           (quick-sort-t! tsequence from-index (dec new-pivot-index))
           (quick-sort-t! tsequence (inc new-pivot-index) to-index)
           tsequence)))
 
 (defn quick-sort [sequence] 
   (persistent! (quick-sort-t! (transient sequence) 0 (dec (count sequence)) )))
+
+(defn quick-sort-with-comparison-count [sequence]
+  (reset! count-comparisons 0)
+  [(quick-sort sequence) @count-comparisons]
+  )
+
+(defn assert-sorted [s] (if (not (apply < s)) (throw (Exception. "Failed to sort input"))))
+
 
 (comment "Question 1
 GENERAL DIRECTIONS:
