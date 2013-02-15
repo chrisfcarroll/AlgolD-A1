@@ -10,14 +10,18 @@
 
 (def count-comparisons (atom 0))
 
+(def pivot-choice (atom :last))
+
 (defn choose-pivot-index
   "returns the index of a single element of tsequence lying between from-index and to-index inclusive.
   Valid values for how
-   :first    - Always returns from-index"
+   :first    - Always returns from-index
+   :last     - Always returns from-index"
   [how tsequence from-index to-index] 
   (case how
     :first from-index
-    (throw (IllegalArgumentException. ":first is the only implementation."))))
+    :last to-index
+    (throw (IllegalArgumentException. ":first and :last are the only implementations."))))
 
 (defn <-at [s x y] (< (nth s x) (nth s y)) )
 
@@ -33,8 +37,9 @@
 
   ([tseq pivot-index from-index to-index]
 
-    (if (not= pivot-index from-index) (throw (IllegalArgumentException. "Can't yet deal with the case when pivot is not at start of sub sequence." ))) 
-        ; put the pivot at the beginning so we can always work simplistically left to right
+    (if (not= pivot-index from-index)
+      (swap-at! tseq from-index pivot-index)
+    )
 
     (let [ii                     (atom from-index)
           rightmost-small-index  (atom from-index)]
@@ -51,16 +56,14 @@
 
   ([tseq pivot-index] (qs-partition-about-and-get-new-pivot-index! tseq pivot-index 0 (dec (count tseq)))))
 
-
-
 (defn quick-sort-t! [ tsequence from-index to-index ]
   (if (<= to-index from-index)
     tsequence
-    (let [pivot-index     (choose-pivot-index :first tsequence from-index to-index)
+    (let [pivot-index     (choose-pivot-index @pivot-choice tsequence from-index to-index)
           new-pivot-index (qs-partition-about-and-get-new-pivot-index! 
                                   tsequence pivot-index from-index to-index)]
-          (println "(" from-index " to " to-index ")")
-          (swap! count-comparisons #(+ % (dbg (- to-index from-index))))
+          (comment println "(" from-index " to " to-index ")")
+          (swap! count-comparisons #(+ % (- to-index from-index)))
           (quick-sort-t! tsequence from-index (dec new-pivot-index))
           (quick-sort-t! tsequence (inc new-pivot-index) to-index)
           tsequence)))

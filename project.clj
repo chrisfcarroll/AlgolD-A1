@@ -4,7 +4,7 @@
 
   :dependencies [[org.clojure/clojure "1.4.0"]
                  ;[org.apache.commons/commons-lang3 "3.1"]
-                 ;[org.clojure/math.numeric-tower "0.0.2"]
+                 [org.clojure/math.numeric-tower "0.0.2"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  
                  ]

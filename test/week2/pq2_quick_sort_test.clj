@@ -6,20 +6,29 @@
     [contrib :refer :all]
     ))
 
-(deftest quick-sort-should-be-correct
-  (are [input] (<= (dbg (quick-sort input)))
-        [1]
-        [1 2 3]
-        [1 3 4 2 5]
-        [3 1 2 4 5]
-        [3 1 4 2 5]
-        [5 1 2 3 4]
-        [45 21 65 34 4 8 35 57 3 2 5]
-  ))
+(deftest quick-sort-should-be-correct-for-any-pivot
+  (doseq [p [:last :first]]
+    (reset! week2.pq2-quick-sort/pivot-choice p)
+    (are [input] (<= (quick-sort input))
+          [1]
+          [1 2 3]
+          [1 3 4 2 5]
+          [3 1 2 4 5]
+          [3 1 4 2 5]
+          [5 1 2 3 4]
+          [45 21 65 34 4 8 35 57 3 2 5]
+  )))
 
-(deftest choose-pivot-index-should-choose-an-index-within-the-given-range
+(deftest choose-pivot-index-first-should-choose-left-index
   (are [input left-index right-index] 
-      (<=  left-index (choose-pivot-index :first input left-index right-index) right-index)
+      (= left-index (choose-pivot-index :first input left-index right-index))
+    '(1 2 3) 0 3
+    '(1 2 3) 1 1
+    ))
+
+(deftest choose-pivot-index-last-should-choose-right-index
+  (are [input left-index right-index] 
+      (= right-index (choose-pivot-index :last input left-index right-index))
     '(1 2 3) 0 3
     '(1 2 3) 1 1
     ))
