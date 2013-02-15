@@ -7,7 +7,7 @@
     ))
 
 (deftest quick-sort-should-be-correct-for-any-pivot
-  (doseq [pivot-choice [:last :first]]
+  (doseq [pivot-choice [:last :first :median-of-3]]
     (are [input] (apply <= (quick-sort input pivot-choice))
           [1]
           [1 2 3]
@@ -21,15 +21,25 @@
 (deftest choose-pivot-index-first-should-choose-left-index
   (are [input left-index right-index] 
       (= left-index (choose-pivot-index :first input left-index right-index))
-    '(1 2 3) 0 3
+    '(1 2 3) 0 2
     '(1 2 3) 1 1
     ))
 
 (deftest choose-pivot-index-last-should-choose-right-index
   (are [input left-index right-index] 
       (= right-index (choose-pivot-index :last input left-index right-index))
-    '(1 2 3) 0 3
+    '(1 2 3) 0 2
     '(1 2 3) 1 1
+    ))
+
+(deftest choose-pivot-index-median-of-3-should-return-index-of-median-of-first-last-middle
+  (are [expected input left-index right-index] 
+      (= expected (choose-pivot-index :median-of-3 input left-index right-index))
+     0 '(1 3 2) 0 0
+     1 '(1 2 3) 0 2
+     0 '(2 1 3) 0 2
+     2 '(1 3 2) 0 2
+     0 '(1 2)   0 1
     ))
 
 (deftest <-at-should-be-correct-when-true
