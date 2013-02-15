@@ -21,13 +21,3 @@
   (are [input] (some? #(= % (choose-pivot :first input)) input )
       '(1 2 3)
     ))
-
-(deftest qs-partition-should-not-lose-any-elements
-  (are [input pivot] 
-      (lett [output (qs-partition-on input pivot)
-             combined-output (flatten output)]
-        (println "input,output:" input "," output "," combined-output)
-        (aare [element] (in-list? element combined-output) input)
-      )
-    '(1 2 3) 1
-    ))
