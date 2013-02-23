@@ -47,6 +47,8 @@
 
   "))
 
+(ns repl)
+
 (defn -main 
   ([subject] (condp #(.startsWith %1 %2) subject
               "karatsuba"  (show-karatsuba)
@@ -55,7 +57,8 @@
   ([]  (do (show-karatsuba) (show-merge-sort) (help))))
 
 
-(defn load-use [ns] 
-  (let [filename (str "src/"  (.. ns (replace "-"  "_") (replace "." "/")) ".clj"  )]
-      (load-file filename)
-      (use (symbol ns))))
+(defn load-use [& nses]
+  (doseq [ns nses] 
+    (let [filename (str "src/"  (.. ns (replace "-"  "_") (replace "." "/")) ".clj"  )]
+        (load-file filename)
+        (use (symbol ns)))))

@@ -1,4 +1,4 @@
-(ns week2.pq2-quick-sort
+(ns week2.pq-quick-sort
   (require [contrib :refer :all]))
 
 (defn calculate-qs-comparisons-with-1st-element-as-pivot [sequence] ())

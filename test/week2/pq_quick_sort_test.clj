@@ -1,4 +1,4 @@
-(ns week2.pq2-quick-sort-test
+(ns week2.pq-quick-sort-test
   (:require 
     [clojure.test :refer :all]
     [testing :refer :all]

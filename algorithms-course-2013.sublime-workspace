@@ -552,14 +552,16 @@
 	},
 	"file_history":
 	[
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/contrib.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/repl.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/notes/Week3a Graphs.md",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/pq2_quick_sort.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/README.md",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/project.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/pq2_quick_sort_test.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/pq2_quick_sort.clj",
 		"/Volumes/IntilS/source/deployment/pallet/palletdeploy.sublime-project",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/quick_sort_test.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/contrib.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/repl.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/testing.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/quick_sort.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/quick_sort_t_test.clj",
@@ -568,7 +570,6 @@
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week1/merge_sort_test.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/quick_sort_test.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/testing.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/merge_sort.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week1/karatsuba_test.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/notes/Week2b Quicksort.md",
@@ -678,8 +679,7 @@
 		"/Volumes/IntilS/source/deployment/pallet/src/intilery/actions.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/actions.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/domain.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/intilery/project.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/intilery/logs/jclouds-wire.log"
+		"/Users/carrolls/Desktop/Software/Clojure/intilery/project.clj"
 	],
 	"find":
 	{
@@ -687,7 +687,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"<open files>",
@@ -1048,6 +1048,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 157.0,
+	"side_bar_width": 236.0,
 	"status_bar_visible": true
 }
