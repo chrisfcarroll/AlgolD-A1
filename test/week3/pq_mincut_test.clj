@@ -17,3 +17,13 @@
 (deftest flatten-1tomany-map-into-kv-pairs-should-be-correct
   (is (= (reverse '([1 10] [1 12] [2 20] [2 12]))
          (flatten-1tomany-map-into-kv-pairs {1 [10 12], 2 [20 12]}))))
+
+(deftest merge-kv-pair-into-1tomany-map-should-add-pairs-to-empty-map
+  (is (= {10 [1], 11 [1], 20 [2]}
+         (reduce merge-kv-pair-into-1tomany-map {} '([10 1] [11 1] [20 2]))
+      )))
+
+(deftest merge-kv-pair-into-1tomany-map-should-merge-manies-given-1-to-many
+  (is (= {1 '(13 12 11), 2 '(20) }
+         (reduce merge-kv-pair-into-1tomany-map {} '([1 11] [1 12] [1 13] [2 20]))
+      )))

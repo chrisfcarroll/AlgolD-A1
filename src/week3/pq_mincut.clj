@@ -51,3 +51,9 @@ Your task is to code up and run the randomized contraction algorithm for the min
 
 (defn flatten-1tomany-map-into-kv-pairs [onetomanymap]
   (reduce (fn [acc [key vals]] (apply conj acc (for [val vals] [key val])) ) () onetomanymap))
+
+(defn merge-kv-pair-into-1tomany-map [acc [key newval]]
+  (let [old-v-list (get acc key)
+        new-v-list (conj old-v-list newval)]
+    (assoc acc key new-v-list)))
+
