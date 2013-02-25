@@ -24,7 +24,7 @@
   Useful for using let within (are ... ) tests."
   [bindings & exprs]  `(let ~bindings ~@exprs true))
 
-(defmacro aare 
+(defmacro are- 
   "Expands to (are argv expr & <expanded list-of-args>"
   [argv expr args] ;`(clojure.test/are ~argv ~expr ~@listofargs) 
      ;`(clojure.test/are ~argv ~expr ~@(eval args)))

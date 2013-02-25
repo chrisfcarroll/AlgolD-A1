@@ -1,38 +1,46 @@
 (ns week3.pq-mincut
-  (:require [clojure.string :refer [split-lines split trimr]]))
+  (:require 
+    [week3.indexing :refer :all]
+    [clojure.set :refer [union difference]]))
 
-; Load the file into a map of nodes->edges and a map of edges->nodes
+; Load the file into a map of node-node adjacencies
 (def pq-input-txt (slurp "src/week3/kargerMinCut.txt"))
-
-(defn mapentries-from-tab-delimited-lines [string]
-  (for [line (split-lines string)] 
-    (let [[nstring edgesstring] (split line #"\t" 2) 
-          node (Integer/parseInt nstring)
-          edges (map #(Integer/parseInt %) (split edgesstring #"\t"))]
-        [node edges])))
-
 (def pq-input-rows (mapentries-from-tab-delimited-lines pq-input-txt))
+(def pq-node-map (into (sorted-map) pq-input-rows))
+;
+(defn choose-2-adjacent-nodes [node-map]
+  (let [nodecount (count node-map)
+        i1    (rand-int nodecount)
+        n1    (nth (keys node-map) i1)
+        adjs (get node-map n1)
+        adjcount (count adjs)
+        i2  (rand-int adjcount)
+        n2  (nth (seq adjs) i2)]
+    [n1 n2]))
 
-(def pq-node-index (into (sorted-map) pq-input-rows))
+(defn shrink-graph 
+  ([node-map] (let [[n1 n2] (choose-2-adjacent-nodes node-map)] 
+                      (shrink-graph node-map n1 n2)))
+  ([node-map n1 n2] 
+    (let [merged-adjacencies (union (get node-map n1) (get node-map n2))
+          new-adjacencies (difference merged-adjacencies #{n1 n2})
+          t1 (dissoc node-map n2)
+          t2 (assoc t1 n1 new-adjacencies)]
+      (comment println "(joining" n2 "to" n1 ;"; merged:" merged-adjacencies "; new:" new-adjacencies
+               "; tmp2:" t2)
+      (loop [acc t2 i 0]
+        (let [n (nth (keys acc) i)
+              old-adjs (get acc n)
+              adj-n2?  (old-adjs n2)]
+          (comment println n ": " old-adjs " : has " adj-n2? 
+                      "? ->" (conj (difference old-adjs #{n2}) n1) "else" old-adjs)
+          (let [
+              new-adjs (if adj-n2? (conj (difference old-adjs #{n2}) n1) old-adjs)
+              t3 (assoc acc n new-adjs)]
+              (if (= (count acc) (inc i))
+                t3
+                (recur t3 (inc i)))))))))
 
-(def pq-edges-2 
-  (let [pq-edges-builder (transient {} )]
-    (doseq [[node edges] pq-input-rows]
-      (doseq [edge edges]
-        (let [prev-node-for-edge (get pq-edges-builder edge)]
-          (assoc! pq-edges-builder edge (cons node prev-node-for-edge)))))
-    (persistent! pq-edges-builder)))
-
-(defn pq-edges-3 [input-rows]
-    (let [res {0 0}]
-      (reduce 
-        (fn [[node edges] pq-input-rows] 
-          (for [edge edges]
-            (let [prev-node-for-edge (get res edge)]
-              (assoc res edge (cons node prev-node-for-edge)))))
-        input-rows)))
-
-(defn e3 [x] (reduce (fn [res [k v]] (for [e v] (conj res [e k]))) () x))
 
 (comment 
 "The file contains the adjacency list representation of a simple undirected graph. There are 200 vertices labeled 1 to 200. The first column in the file represents the vertex label, and the particular row (other entries except the first column) tells all the vertices that the vertex is adjacent to. So for example, the 6th row looks like : 6  155 56  52  120 ....... 
@@ -48,12 +56,3 @@ Your task is to code up and run the randomized contraction algorithm for the min
                 (fn [res [k v]] (assoc! res k v))
                 (transient x)
                 y)))
-
-(defn flatten-1tomany-map-into-kv-pairs [onetomanymap]
-  (reduce (fn [acc [key vals]] (apply conj acc (for [val vals] [key val])) ) () onetomanymap))
-
-(defn merge-kv-pair-into-1tomany-map [acc [key newval]]
-  (let [old-v-list (get acc key)
-        new-v-list (conj old-v-list newval)]
-    (assoc acc key new-v-list)))
-
