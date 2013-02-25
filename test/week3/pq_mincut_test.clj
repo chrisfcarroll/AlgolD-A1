@@ -15,7 +15,7 @@
     {1 (multiset 2 3 4), 2 (multiset 1), 3 (multiset 1 4 5) 4 (multiset 1 3 5) 5 (multiset 3 4 6 7) 6 (multiset 5 7) 7 (multiset 5 6) }))
 
 (deftest should-find-200-nodes
-    (is (= 200 (count pq-node-map)))
+    (is (= 200 (count pq-graph)))
     )
 
 (deftest choose-2-adjacent-nodes-should-choose-two-nodes-in-range
