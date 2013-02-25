@@ -2,16 +2,17 @@
   (:require 
     [clojure.test :refer :all]
     [week3.indexing :refer :all]
+    [multiset.core :refer [multiset? multiset] :as ms]
   ))
 
-(deftest mapentries-from-tab-delimited-lines-should-be-a-seq-of-vectors-of-node-and-set-of-edges-es
+(deftest mapentries-from-tab-delimited-lines-should-be-a-seq-of-vectors-of-node-and-multiset-of-edges-es
   (let [s (mapentries-from-tab-delimited-lines "1\t10\t11\t\n2\t21\t22\t")
         row (first s)]
-      (is (= '([1 #{10 11}] [2 #{21 22}]) s))
+      (is (= (list [1 (multiset 11 10)] [2 (ms/multiset 21 22)]) s))
       (is (seq? s))
       (is (vector? row))
       (is (int (first row)))
-      (is (set? (second row)))
+      (is (multiset? (second row)))
       (is (int (first (second row))))))
 
 (deftest flatten-1tomany-map-into-kv-pairs-should-be-correct

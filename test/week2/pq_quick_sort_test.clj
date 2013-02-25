@@ -1,3 +1,4 @@
+(comment "
 (ns week2.pq-quick-sort-test
   (:require 
     [clojure.test :refer :all]
@@ -94,3 +95,4 @@
 
 
 
+")

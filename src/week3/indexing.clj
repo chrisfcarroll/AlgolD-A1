@@ -1,12 +1,14 @@
 (ns week3.indexing
-  (:require [clojure.string :refer [split-lines split trimr]]))
+  (:require 
+    [clojure.string :refer [split-lines split trimr]]
+    [multiset.core :refer [multiset? multiset] :as ms]))
 
 (defn mapentries-from-tab-delimited-lines [string]
   (for [line (split-lines string)
               :when (not (.startsWith line "#"))] 
-    (let [[nstring edgesstring] (split line #"\t" 2) 
+    (let [[nstring edgesstring] (split line #"\s" 2) 
           node (Integer/parseInt nstring)
-          edges (apply sorted-set (map #(Integer/parseInt %) (split edgesstring #"\t")))]
+          edges (apply multiset (map #(Integer/parseInt %) (split edgesstring #"\s")))]
         [node edges])))
 
 (defn flatten-1tomany-map-into-kv-pairs [onetomanymap]

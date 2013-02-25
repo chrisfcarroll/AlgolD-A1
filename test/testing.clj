@@ -3,6 +3,8 @@
 
 (def ^:dynamic *show-manual-test-commentary* false)
 
+(defmacro is-not [arg] `(clojure.test/is (not ~arg)))
+
 (defn not-nil? [expr] (not (nil? expr)))
 
 (defn is-in-vector? 

@@ -4,6 +4,7 @@
     [week1.karatsuba :refer :all]
     [week1.merge-sort :refer :all]
     [week2.quick-sort :refer :all]
+    [week3.pq-mincut :refer :all]
   ))
 
 (defn show-karatsuba []
@@ -54,7 +55,7 @@
               "karatsuba"  (show-karatsuba)
               "merge-sort" (show-merge-sort)
               (-main)))
-  ([]  (do (show-karatsuba) (show-merge-sort) (help))))
+  ([]  (do (help) (ns week3.pq-mincut))))
 
 
 (defn load-use [& nses]
