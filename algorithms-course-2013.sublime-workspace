@@ -4,16 +4,128 @@
 		"selected_items":
 		[
 			[
+				"tes",
+				"testgraph1"
+			],
+			[
+				"mul",
+				"multiplicities"
+			],
+			[
+				"def",
+				"defmacro"
+			],
+			[
+				"test",
+				"testcase"
+			],
+			[
+				"shr",
+				"shrink-graph"
+			],
+			[
+				"mi",
+				"mincut"
+			],
+			[
+				"min",
+				"min-cut-1"
+			],
+			[
+				"shir",
+				"shrink-graph-until-two-nodes-left"
+			],
+			[
+				"wee",
+				"week3"
+			],
+			[
+				"n2",
+				"n2adj"
+			],
+			[
+				"n1",
+				"n1adj"
+			],
+			[
+				"mu",
+				"multiset-in"
+			],
+			[
+				"ne",
+				"new-adjs"
+			],
+			[
+				"adj",
+				"adj-n2"
+			],
+			[
+				"old",
+				"old-adjs"
+			],
+			[
+				"d",
+				"difference"
+			],
+			[
+				"mer",
+				"merged-adjacencies"
+			],
+			[
+				"ed",
+				"edges"
+			],
+			[
+				"nod",
+				"node-map"
+			],
+			[
+				"node",
+				"node-map"
+			],
+			[
+				"n",
+				"n2a"
+			],
+			[
+				"new",
+				"new-v-list"
+			],
+			[
+				"pq",
+				"pq-edges-builder"
+			],
+			[
+				"pq-in",
+				"pq-input-rows"
+			],
+			[
+				"se",
+				"seq-from-source"
+			],
+			[
+				"ns",
+				"nstring"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"pq-",
+				"pq-map-sourcelines"
+			],
+			[
+				"map",
+				"map-from-source"
+			],
+			[
 				"med",
 				"median-of-3"
 			],
 			[
 				"pi",
 				"pivot-value-at-time-chosen"
-			],
-			[
-				"def",
-				"default-pivot-choice"
 			],
 			[
 				"qui",
@@ -58,10 +170,6 @@
 			[
 				"qs",
 				"qs-partition-about-and-get-new-pivot-index"
-			],
-			[
-				"new",
-				"new-pivot-index"
 			],
 			[
 				"ex",
@@ -154,10 +262,6 @@
 			[
 				"sho",
 				"show-merge-sort"
-			],
-			[
-				"ne",
-				"nextL"
 			],
 			[
 				"nex",
@@ -320,10 +424,6 @@
 				"amiid"
 			],
 			[
-				"node",
-				"node-spec-on-aws"
-			],
-			[
 				"mod",
 				"mod_jk"
 			],
@@ -414,30 +514,6 @@
 			[
 				"phase",
 				"phase-fn"
-			],
-			[
-				"con",
-				"connector"
-			],
-			[
-				"nod",
-				"node-spec-for-intilery-webdata-stabletest"
-			],
-			[
-				"server",
-				"server-spec"
-			],
-			[
-				"command",
-				"commandname"
-			],
-			[
-				"comm",
-				"commandname"
-			],
-			[
-				"up-cento",
-				"up-centos-official63updated"
 			]
 		]
 	},
@@ -451,11 +527,11 @@
 		"selected_items":
 		[
 			[
-				"",
+				"re",
 				"Build: Re-test"
 			],
 			[
-				"re",
+				"",
 				"Build: Re-test"
 			],
 			[
@@ -552,17 +628,30 @@
 	},
 	"file_history":
 	[
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/contrib.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/repl.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/notes/Week3a Graphs.md",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/pq2_quick_sort.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/README.md",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week3/pq_mincut_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/pq_mincut.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/testcase1.txt",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/.lein-repl-history",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/testcase4.txt",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/indexing.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/testing.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/pq_quick_sort_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/quick_sort_test.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/project.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/repl.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/pq_mincut_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/pq_quick_sort.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week3/indexing_test.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/contrib.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week1/karatsuba.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week3/kargerMinCut.txt",
+		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/notes/Week3a Graphs.md",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/pq2_quick_sort.clj",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/QuickSort.txt",
+		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/README.md",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/pq2_quick_sort_test.clj",
 		"/Volumes/IntilS/source/deployment/pallet/palletdeploy.sublime-project",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/quick_sort_test.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/testing.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/src/week2/quick_sort.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/quick_sort_t_test.clj",
 		"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013/test/week2/programming_question2_test.clj",
@@ -666,20 +755,7 @@
 		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Leiningen.sublime-build",
 		"/Volumes/IntilS/source/deployment/pallet/core.clj",
 		"/Volumes/IntilS/source/deployment/pallet/AFn.java",
-		"/Volumes/IntilS/source/deployment/pallet/	at clojure.lang.Compiler.eval(Compiler.java",
-		"/Volumes/IntilS/source/deployment/pallet/	at clojure.main$main.doInvoke(main.clj",
-		"/Volumes/IntilS/source/deployment/pallet/Exception in thread \"main\" java.lang.RuntimeException",
-		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Python/Python.sublime-build",
-		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Ruby/Ruby.sublime-build",
-		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/User/Clojure.sublime-settings",
-		"/Users/carrolls/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/carrolls/Desktop/Software/Clojure/eg/project.clj",
-		"/Volumes/IntilS/source/deployment/pallet/src/various-amazon-images.clj",
-		"/Volumes/IntilS/source/deployment/pallet/src/intilery/domain.clj",
-		"/Volumes/IntilS/source/deployment/pallet/src/intilery/actions.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/actions.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/intilery/src/intilery/domain.clj",
-		"/Users/carrolls/Desktop/Software/Clojure/intilery/project.clj"
+		"/Volumes/IntilS/source/deployment/pallet/	at clojure.lang.Compiler.eval(Compiler.java"
 	],
 	"find":
 	{
@@ -690,6 +766,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/carrolls/Desktop/Software/Clojure/algorithms-course-2013",
 			"<open files>",
 			"/Volumes/IntilS/source/deployment/pallet,<open folders>,<open files>",
 			"/Volumes/IntilS/source/deployment/pallet",
@@ -704,6 +781,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"new-adjs",
+			"acc",
+			"tmp3",
+			"\\<n\\>",
+			"t(\\d)",
+			"adjminusnode",
+			"node2(\\w)",
+			"node1(\\w)",
+			"n2",
+			"n1",
+			"node-map",
+			"pq-node-map",
+			"swap-x-to-y",
+			"#\\{([^}]+)\\}",
+			"merged",
+			"#\\{([^}]+)\\}",
+			"edge",
+			"aare",
+			"\n      ",
+			"\\[([^]]+)\\](,|\\})",
+			"pq-node-index",
+			"191",
+			"seq-from-tab-delimited-lines",
+			"\\s37",
+			" 37",
+			"37",
+			"200",
+			"edge-line",
 			"comment",
 			"new-pivot-index",
 			"sequence",
@@ -803,42 +908,34 @@
 			"server-spec-package",
 			"stabletest-dbserver",
 			"stabletest-webserver",
-			"intilerywar",
-			"intilerywebdata-war",
-			"deploy-dependencies",
-			"build",
-			"server-spec :phases \\{:configure \\(phase-fn \\(package \"([^\"]+)\"\\)\\)\\}\\)",
-			"phase-deploy",
-			"phase-deploy-geoip",
-			"phase-deploy-webapp",
-			"intilery",
-			"intilery.actions",
-			"09",
-			"\\<up\\>",
-			"up",
-			"tomcat6",
-			":refer",
-			"tomcat6",
-			"with-java-openjdk",
-			"node-spec-europe-amzlinux64-smallest",
-			"node-spec-for-intilery-webdata-stabletest",
-			"server-standard-crates",
-			"base-server",
-			"deploy",
-			"tools",
-			"mygroup",
-			"centos",
-			"))\n",
-			"passphrase",
-			"password",
-			"carrolls"
+			"intilerywar"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"new-adjacencies-for-ith-node",
+			"tmp3",
+			"result",
+			"ith-node",
+			"tmp\\1",
+			"adj-minus-node",
+			"node2-\\1",
+			"node1-\\1",
+			"node2",
+			"node1",
+			"graph",
+			"pq-graph",
+			"replace-all-x-with-y",
+			"(multiset \\1)",
+			"adj",
+			"are-",
+			"#{\\1}\\2",
+			"pq-node-map",
+			"mapentries-from-tab-delimited-lines",
+			"edgesstring",
 			"rightmost-small-index",
 			"next-pivot-index",
 			"tsequence",
@@ -946,24 +1043,6 @@
 			"<A href=\"\\1\" title=\"BootCampESD.pkg direct download\">\\1</a>",
 			"",
 			"<td>",
-			"",
-			"\\n",
-			"\\1 )",
-			"insert into @appids values( \\1",
-			"",
-			"\\1.cdg.caudwell.com",
-			"\\n",
-			"\\\\)",
-			"\\\\(",
-			"ls -l ",
-			"\\\\ ",
-			"\\ ",
-			"DELETED : \\1/\\2",
-			"ls -l ",
-			"NEW : \\1/\\2",
-			"CHANGED : \\1",
-			"NEW : \\1",
-			"NEW",
 			""
 		],
 		"reverse": false,
@@ -1013,7 +1092,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 227.0
+		"height": 240.0
 	},
 	"output.find_results":
 	{
