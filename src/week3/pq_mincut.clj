@@ -1,6 +1,6 @@
 (ns week3.pq-mincut
   (:require 
-    [week3.indexing :refer :all]
+    [graph-files :refer :all]
     [multiset.core :refer [multiset multiset? union minus multiplicity multiplicities] :as ms]))
 (comment 
 "The file contains the adjacency list representation of a simple undirected graph. There are 200 vertices labeled 1 to 200. The first column in the file represents the vertex label, and the particular row (other entries except the first column) tells all the vertices that the vertex is adjacent to. So for example, the 6th row looks like : 6  155 56  52  120 ....... 
@@ -12,7 +12,7 @@ Your task is to code up and run the randomized contraction algorithm for the min
 (defn graph-from-file [filepath] 
   (into (sorted-map) (mapentries-from-tab-delimited-lines(slurp filepath))))
 
-(def pq-graph (graph-from-file "src/week3/kargerMinCut.txt"))
+(def pq-graph    (graph-from-file "src/week3/kargerMinCut.txt"))
 (def testgraph1  (graph-from-file "src/week3/testcase1.txt"))
 (def testgraph4  (graph-from-file "src/week3/testcase4.txt"))
 ;

@@ -165,4 +165,78 @@ For loop over nodes 1..n
     Consider edge u->v.
     Case 1: u is visited first then DFS will mark v before u
     Case 2: v is visited first. There is no directed cycle therefore can't find u from v. Therefore v is done before u.
-    
+
+
+# Computing Strong Components in Directed Graphs
+Linear time, based on DFS, for connectivity for directed graph
+Def: Strongly connected= you can get from any point to any other point
+
+Equivalence classes of:
+u~v if there is a path from u to v and v to u
+
+Worst case: each node on its own
+The SCCs also represent a graph
+
+# SCC Algorithm on DFS
+DFS on a node can be adapted to identify a SCC
+If you start a DFS in the right place you get a SCC, if you start in the wrong place you don't
+Use a preprocessing step: 
+## Kosaraju's 2 pass Algorithm
+
+1 Reverse all the arcs on the path
+2 Do DFS-Loop on reversed graph
+    - compute the 'magical ordering of nodes'
+    Let f(v) = 'finishing time of each v in V'
+3 Do DFS-Loop on first graph
+    process in the decreasing order of finishing times
+    - discover the SCCs one by one
+
+### DFS-Loop Pass 1
+DFS-Loop(graph G)
+    global t= count-of-nodes-totally-finished-with=0
+    global S= current source vertext = empty set ;;
+    Assume nodes labelled 1 to n
+For i=n downto to 1
+    if i not yet explored
+        s:= i 
+        DFS(G, i)
+
+DFS(graph G, node i)
+    Mark i as explored
+    Set leader(i):= node s
+    for each arc (ij) in G
+        if j not yet explored
+            DFS(G,j)
+    t++
+    Set f(i):= t
+
+### DFS-Loop Pass 2
+Start with the slowest node, find the cycle to itself and that's the SCC
+Running time: 2*DFS= O(m+n)
+
+# Kosaraju - Proof of correctness and Time
+
+## Observation: every directed graph has 2 levels of granularity, the zoom-out being the SCCs
+The SCCs of a directed graph induce an acyclic 'meta-graph'
+Meta-nodes= SCCs
+Meta-arcs= the arcs between SCCs in original graph
+
+## Key Lemma:
+Consider 2 adjacent SCCs, C1, C2 in G ie exists an arc C1 to C2. Then max f(v) for v in C1 < max f(v) for v in C2 the finishing time.
+
+Case 1. in the first pass, we process a node in C1 before any node in C2
+        Then all of C1 gets explored before _any_ of C2
+Case 2. in the first pass, we process a node in C2 before any node in C1
+        Then the outgoing arc to C1 will be found.
+        Lemma: under DFS, a node is numbered after all the nodes that can be reached from it.
+        Then all of C1 gets explored before _all_ of C2
+
+
+## Corollary:
+Max f(v) in G will be in a 'sink SCC'
+(by contradiction: if not it has an outgoing arc to a SCC with a bigger finishing time)
+
+## Correctness sketch
+The 2nd pass of DFS starts in a sink SCC
+The remove the sink SCC, choose a new sink SCC and repeat
+
