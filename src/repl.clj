@@ -55,7 +55,7 @@
               "karatsuba"  (show-karatsuba)
               "merge-sort" (show-merge-sort)
               (-main)))
-  ([]  (do (help) (ns week3.pq-mincut))))
+  ([]  (do (help) (ns week5.dijkstra))))
 
 
 (defn load-use [& nses]
@@ -63,3 +63,5 @@
     (let [filename (str "src/"  (.. ns (replace "-"  "_") (replace "." "/")) ".clj"  )]
         (load-file filename)
         (use (symbol ns)))))
+
+(use 'repl)

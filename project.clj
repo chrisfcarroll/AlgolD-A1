@@ -19,7 +19,7 @@
     {"sonatype-snapshots" "https://oss.sonatype.org/content/repositories/snapshots"
      "sonatype" "https://oss.sonatype.org/content/repositories/releases/"}
 
-  :repl-options {:init (-main)}
+  :repl-options {:init (do (-main) (use 'repl))}
 
   :main repl
 )

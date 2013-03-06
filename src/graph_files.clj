@@ -14,9 +14,6 @@
 (defn unweighted-graph-from-file [filepath] 
   (into (sorted-map) (unweighted-graph-from-tab-delimited-lines(slurp filepath))))
 
-
-(defn parseInts [seq] (map #(Integer/parseInt %) seq))
-
 (defn weighted-graph-without-parallels-from-tab-comma-delimited-lines [string]
   (for [line (split-lines string)
               :when (not (.startsWith line "#"))] 

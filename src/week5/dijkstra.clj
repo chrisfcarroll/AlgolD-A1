@@ -1,8 +1,41 @@
-(ns week5.dijkstra)
+(ns week5.dijkstra
+  (:require [clojure.set :refer [difference]]))
 
-(def no-path-length 1000000)
+(def inf-length 1000000)
 
+(defn next-nodes-list [graph done todo lengths]
+  (apply concat
+    (for [tail done]
+      (for [[head distance] (get graph tail) 
+            :when (contains? todo head)]
+        (let [candidate [head tail (+ distance (get lengths tail))] ]
+          candidate)))))
 
+(defn choose-next-node [start graph done todo lengths]
+  (if (empty? todo)
+    nil
+    (let [candidates (next-nodes-list graph done todo lengths)]
+      (if (seq candidates)
+          (apply min-key #(get % 2) candidates)
+          nil))))
+
+(defn shortest-distances-and-paths-from-node [start graph] 
+  (loop [done    #{start}
+         todo    (dissoc graph start)
+         lengths {start 0}
+         paths   {start []}] 
+        (if (= 0 (count todo))
+            [lengths paths]
+            (let [[next-node tail length] (choose-next-node start graph done todo lengths)]
+            (recur 
+              (conj   done    next-node)
+              (dissoc todo    next-node)
+              (assoc  lengths next-node length)
+              (assoc  paths   next-node (conj (get paths tail) next-node) )
+            )))))
+
+(defn shortest-distances-from-node [start graph]
+  (let [[lengths paths] (shortest-distances-and-paths-from-node start graph)] lengths))
 
 
 (comment "In this programming problem you'll code up Dijkstra's shortest-path algorithm. 
