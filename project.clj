@@ -6,7 +6,7 @@
                  ;[org.apache.commons/commons-lang3 "3.1"]
                  [org.clojure/math.numeric-tower "0.0.2"]
                  [org.clojure/clojure-contrib "1.2.0"]
-                 [org.clojars.achim/multiset "0.1.1-SNAPSHOT"]
+                 [org.clojars.achim/multiset "0.1.0-SNAPSHOT"]
                  ]
   :profiles 
     {:dev

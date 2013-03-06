@@ -14,3 +14,14 @@
       (is (int (first row)))
       (is (multiset? (second row)))
       (is (int (first (second row))))))
+
+
+(comment deftest weighted-graph-from-tab-delimited-lines-should-be-a-seq-of-vectors-of-node-and-multiset-of-edges-es
+  (let [s (weighted-graph-from-tab-delimited-lines "1\t10,110\t11,111\t\n2\t21,121\t22,212\t")
+        row (first s)]
+      (is (= (list [1 (multiset 11 10)] [2 (ms/multiset 21 22)]) s))
+      (is (seq? s))
+      (is (vector? row))
+      (is (int (first row)))
+      (is (multiset? (second row)))
+      (is (int (first (second row))))))

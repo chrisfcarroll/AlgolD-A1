@@ -36,7 +36,7 @@ Your task is to code up and run the randomized contraction algorithm for the min
           node2-adj (get graph node2)
           node1-adj-minus-node2 (minus node1-adj (apply multiset (take (multiplicity node1-adj node2) (repeat node2))))
           node2-adj-minus-node1 (minus node2-adj (apply multiset (take (multiplicity node2-adj node1) (repeat node1))))
-          new-adjacencies (ms/union node1-adj-minus-node2 node2-adj-minus-node1)
+          new-adjacencies (ms/sum node1-adj-minus-node2 node2-adj-minus-node1)
           tmp1 (dissoc graph node2)
           tmp2 (assoc tmp1 node1 new-adjacencies)]
       (comment println "(joining" node2 node2-adj "(" (multiset? node2-adj) ") to" node1 node1-adj "(" (multiset? node2-adj) ") merged:" merged-adjacencies " new:" new-adjacencies
