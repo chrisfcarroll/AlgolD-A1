@@ -1,9 +1,9 @@
-(ns week3.pq-mincut-test
+(ns week3.mincut-test
 (:require
     [clojure.test :refer :all] 
     [clojure.set :refer [subset? union difference]]
     [multiset.core :as ms :refer [multiset multiset?]]
-    [week3.pq-mincut :refer :all]
+    [week3.mincut :refer :all]
     [testing :refer :all]))
 
 (def simple-test-cases 

@@ -1,4 +1,4 @@
-(ns week3.pq-mincut
+(ns week3.mincut
   (:require 
     [graph-files :refer :all]
     [multiset.core :refer [multiset multiset? union minus multiplicity multiplicities] :as ms]))
@@ -9,12 +9,9 @@ Your task is to code up and run the randomized contraction algorithm for the min
 ;
 ; Load the file into a node-node adjacency list
 ;
-(defn graph-from-file [filepath] 
-  (into (sorted-map) (mapentries-from-tab-delimited-lines(slurp filepath))))
-
-(def pq-graph    (graph-from-file "src/week3/kargerMinCut.txt"))
-(def testgraph1  (graph-from-file "src/week3/testcase1.txt"))
-(def testgraph4  (graph-from-file "src/week3/testcase4.txt"))
+(def pq-graph    (unweighted-graph-from-file "src/week3/kargerMinCut.txt"))
+(def testgraph1  (unweighted-graph-from-file "src/week3/testcase1.txt"))
+(def testgraph4  (unweighted-graph-from-file "src/week3/testcase4.txt"))
 ;
 ; bits of the algorithm
 ;
