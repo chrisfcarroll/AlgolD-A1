@@ -94,6 +94,6 @@
       (is-not (contains? adj1 1))
       )))
 
-(deftest test-case-1-should-probably-get-close-in-3-runs
-  (is (<= (min-cut testgraph1 3) 5)))
+(deftest test-case-1-should-probably-get-close-in-4-runs
+  (is (<= (min-cut testgraph1 4) 7)))
 
